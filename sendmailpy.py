@@ -135,13 +135,13 @@ class OpenMail(object):
 
 
 if __name__ == '__main__':
-    emailaddress = "ffm1110@qq.com"
-    password = "gglgeyeycrfcbjjj"
+    emailaddress = "****@qq.com"
+    password = "********"
     hostname = "imap.qq.com"
     om = OpenMail(hostname, emailaddress, password, port=465)
-    om.sendmail(["ffm1110@qq.com", "ffm1110@163.com"], "测试", "内容测试",
-                file=[[r"C:\Users\rpadev\Desktop\驾照统计.xlsx"],
-                      [r"C:\Users\rpadev\Desktop\批发报表们的自动化统计.docx",
-                      r"C:\Users\rpadev\Desktop\附件2-7人民银行征信系统标准  企业信用报告产品说明（二代试行）.pdf"]],send_type="different"
+    om.sendmail(["******@qq.com", "*******@163.com"], "测试标题", "测试内容",
+                file=[[r"*******.xlsx"],
+                      [r"*******.docx",
+                      r"*******.pdf"]],send_type="different"
                 )
     om.logout()
